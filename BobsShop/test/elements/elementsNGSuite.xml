@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="elements Package Suite"  allow-return-values="true">
+    <!-- Product Test -->
+    <test name="Product Factory Test">
+        <groups>
+            <run>
+                <include name="Factory"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Product"/>
+        </classes>
+    </test>
+    <test name="Product Getters Test">
+        <groups>
+            <run>
+                <include name="Getters"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Product"/>
+        </classes>
+    </test>
+    <test name="Product Setters Test">
+        <groups>
+            <run>
+                <include name="Setters"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Product"/>
+        </classes>
+    </test>
+    <test name="Product Other Tests">
+        <groups>
+            <run>
+                <exclude name="Factory"/>
+                <exclude name="Getters"/>
+                <exclude name="Setters"/>
+                <exclude name="testExamples"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Product"/>
+        </classes>
+    </test>
+    
+    <!-- Customer Test -->
+    <test name="Customer Factory Test">
+        <groups>
+            <run>
+                <include name="Factory"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Customer"/>
+        </classes>
+    </test>
+    <test name="Customer Getters Test">
+        <groups>
+            <run>
+                <include name="Getters"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Customer"/>
+        </classes>
+    </test>
+    <test name="Customer Setters Test">
+        <groups>
+            <run>
+                <include name="Setters"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Customer"/>
+        </classes>
+    </test>
+    <test name="Customer Other Tests">
+        <groups>
+            <run>
+                <exclude name="Factory"/>
+                <exclude name="Getters"/>
+                <exclude name="Setters"/>
+                <exclude name="testExamples"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Customer"/>
+        </classes>
+    </test>
+    
+    <!-- Purchase Test -->
+    <test name="Purchase Factory Test">
+        <groups>
+            <run>
+                <include name="Factory"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Purchase"/>
+        </classes>
+    </test>
+    <test name="Purchase Getters Test">
+        <groups>
+            <run>
+                <include name="Getters"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Purchase"/>
+        </classes>
+    </test>
+    <test name="Purchase Setters Test">
+        <groups>
+            <run>
+                <include name="Setters"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Purchase"/>
+        </classes>
+    </test>
+    <test name="Purchase Other Tests">
+        <groups>
+            <run>
+                <exclude name="Factory"/>
+                <exclude name="Getters"/>
+                <exclude name="Setters"/>
+                <exclude name="testExamples"/>
+            </run>                
+        </groups>
+        <classes>_
+            <class name="elements.TestNG_Purchase"/>
+        </classes>
+    </test>
+    <!-- Cart Test -->
+    <test name="Cart Factory Test">
+        <groups>
+            <run>
+                <include name="Factory"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Cart"/>
+        </classes>
+    </test>
+    <test name="Cart Getters Test">
+        <groups>
+            <run>
+                <include name="Getters"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Cart"/>
+        </classes>
+    </test>
+    <test name="Cart Setters Test">
+        <groups>
+            <run>
+                <include name="Setters"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Cart"/>
+        </classes>
+    </test>
+    <test name="Cart Other Tests">
+        <groups>
+            <run>
+                <exclude name="Factory"/>
+                <exclude name="Getters"/>
+                <exclude name="Setters"/>
+                <exclude name="testExamples"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Cart"/>
+        </classes>
+    </test>
+</suite>

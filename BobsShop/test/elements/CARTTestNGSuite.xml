@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="elements Package Suite"  allow-return-values="true">
+    <!-- Cart Test -->
+    <test name="Cart Factory Test">
+        <groups>
+            <run>
+                <include name="Factory"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Cart"/>
+        </classes>
+    </test>
+    <test name="Cart Getters Test">
+        <groups>
+            <run>
+                <include name="Getters"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Cart"/>
+        </classes>
+    </test>
+    <test name="Cart Setters Test">
+        <groups>
+            <run>
+                <include name="Setters"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Cart"/>
+        </classes>
+    </test>
+    <test name="Cart Other Tests">
+        <groups>
+            <run>
+                <exclude name="Factory"/>
+                <exclude name="Getters"/>
+                <exclude name="Setters"/>
+                <exclude name="testExamples"/>
+            </run>                
+        </groups>
+        <classes>
+            <class name="elements.TestNG_Cart"/>
+        </classes>
+    </test>
+</suite>
